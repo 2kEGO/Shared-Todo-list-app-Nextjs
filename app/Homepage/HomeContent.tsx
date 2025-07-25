@@ -1,26 +1,30 @@
-import React, {useState} from 'react'
-import SideBar from './SideBar'
-import MainContent from './MainContent'
+import React, { useState } from "react";
+import SideBar from "./SideBar";
+import MainContent from "./Homepage-Components/MainContent";
+import NewTask from "./Homepage-Components/NewTask";
 
 const HomeContent = () => {
-
-
-
   return (
     <>
-        <div className='flex flex-row w-full h-screen'>
-        
-            <div className='flex basis-[15%] h-screen w-full bg-red-200'>
-                <SideBar/>
-            </div>
+      <section className="flex" style={{ backgroundColor: "var(--primary-silver-color)" }}>
+        <div className="flex flex-row w-[100%]">
 
-            <div className='flex flex-1'>
-                <MainContent/>
-            </div>
+          <div
+            className="flex basis-[20%] h-screen"
+            style={{ backgroundColor: "var(--primary-white-color)" }}
+          >
+            <SideBar />
+          </div>
+
+          <div className="flex flex-1 h-screen">
+            <MainContent />
+          </div>
+
+          
         </div>
+      </section>
     </>
-    
-  )
-}
+  );
+};
 
-export default HomeContent
+export default HomeContent;

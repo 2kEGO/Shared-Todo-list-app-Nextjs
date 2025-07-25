@@ -1,2 +1,15 @@
 @import "tailwindcss";
 
+:root{
+    --primary-silver-color: #f6f6f6;
+    --primary-white-color: #ffffff;
+    --primary-black-color: rgb(0, 0, 0);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
